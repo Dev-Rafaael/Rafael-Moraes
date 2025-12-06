@@ -27,7 +27,7 @@ import bronco from './assets/IMG/bronco.jpg';
 import porsche from './assets/IMG/911.jpg';
 import profile from './assets/IMG/RmBlueSea.png';
 import completo from './assets/IMG/completo.png';
-import iconPessoal from './assets/IconPessoal.gif'
+
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect, useState, useRef } from 'react';
@@ -137,7 +137,8 @@ function App() {
 
                 </div>
                 <div className="iconInfo">
-                  <img src={iconPessoal} alt="" />
+                 <img src="/gifs/IconPessoal.gif" alt="" />
+
                 </div>
                 
              </article>
