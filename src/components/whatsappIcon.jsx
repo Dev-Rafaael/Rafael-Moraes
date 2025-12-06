@@ -1,6 +1,6 @@
 import React from 'react'
 import whatsappIcon from '../assets/IMG/whatsapp.png'
-import './WhatsappIcon.css'
+import './whatsappIcon.css'
 function WhatsappIcon() {
   return (
     <>
