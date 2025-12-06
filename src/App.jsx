@@ -1,7 +1,6 @@
 
 import './App.css'
-import videoBackgroundWhite from './assets/videoBackgroundWhite.mp4';
-import videoBackground from './assets/videoBackground.mp4';
+
 import arrow from './assets/IMG/arrow.png';
 import arrowBlack from './assets/IMG/arrowBlack.png';
 import Whatsapp from './assets/IMG/whatsapp.png';
@@ -82,7 +81,8 @@ function App() {
           playsInline
           className="video-background"
         >
-          <source src={modoEscuro ? videoBackground : videoBackgroundWhite} type="video/mp4" />
+         <source src={modoEscuro ? "/videos/videoBackground.mp4" : "/videos/videoBackgroundWhite.mp4"} type="video/mp4" />
+
           Seu navegador não suporta o elemento de vídeo.
         </video>
 
