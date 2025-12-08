@@ -1,5 +1,4 @@
-import React from 'react'
-import whatsappIcon from '../assets/IMG/whatsapp.png'
+
 import './whatsappIcon.css'
 function WhatsappIcon() {
   return (
@@ -7,7 +6,7 @@ function WhatsappIcon() {
     <div className='zap'>
           <div className='bolaZap'></div>
           <a href="https://wa.me/5511916658824?text=Olá!" target="_blank" className='whatsappIcon'>
-            <img src={whatsappIcon} alt="WhatsApp" className='playIcon'  />
+            <img src={"https://res.cloudinary.com/dwi9yz8wj/image/upload/v1765200112/whatsapp_pcfbss.png"} alt="WhatsApp" className='playIcon'  />
           </a>        
           </div>
     </>

@@ -1,0 +1,421 @@
+/* PROJETOS */
+.sectionProjetos {
+  width: 100%;
+  margin: 0rem auto;
+  height: auto;
+  padding: 6rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid rgba(70, 69, 67, 0.347);
+  border-bottom: 1px solid rgba(70, 69, 67, 0.347);
+}
+.titleProjetos h2 {
+  width: 100%;
+  margin: 0 auto 0.5rem;
+  font-size: 3rem;
+  text-align: center;
+  font-weight: 800;
+  line-height: 4rem;
+  background: linear-gradient(90deg, rgb(129, 29, 195), rgb(0, 94, 255));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.subtitle p {
+  text-align: center;
+  font-size: 1.2rem;
+  color: rgb(226, 222, 222);
+  margin-bottom: 2.5rem;
+}
+/* Layout dos cards */
+.contentProjetos {
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin: 3rem auto 0;
+}
+
+.card {
+  height: 100%;
+  padding-bottom: 1rem;
+  box-sizing: border-box;
+  background-color: rgba(15, 15, 15, 0.405);
+  border: 1px solid rgba(97, 94, 94, 0.523);
+  border-radius: 1rem;
+}
+.card:hover {
+  transform: scale(1.5);
+  cursor: pointer;
+  background: linear-gradient(
+    rgba(134, 9, 217, 0.803),
+    rgba(24, 91, 206, 0.814)
+  );
+}
+.cardResponsivo {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  border: none;
+}
+
+.imagensCard {
+  width: 100%;
+  height: 12rem;
+}
+.imagensCard button {
+  width: 80%;
+  position: relative;
+  bottom: 40%;
+  left: 10%;
+  font-weight: 600;
+  padding: 0.9rem 1.7rem;
+  margin-top: 1.2rem;
+  border: 1px solid transparent;
+  background-color: #4336a5;
+  border-radius: 0.8rem;
+  text-transform: uppercase;
+}
+.imagensCard button:hover {
+  background: linear-gradient(90deg, rgb(129, 29, 195), rgb(0, 94, 255));
+}
+.imagem {
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem 1rem 0 0;
+}
+
+.projeto {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: 0 auto;
+}
+.card h5 {
+  margin: 1rem 0 0.5rem;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.card p {
+  color: rgb(218, 213, 213);
+  line-height: 1.2rem;
+  margin: 0 0 0.5rem;
+}
+.card .imagensCard button {
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 0.3s ease;
+  pointer-events: none;
+}
+
+.card:hover .imagensCard button {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.tecUsadas {
+  display: flex;
+  flex-wrap: wrap; /* permite quebrar linha */
+  gap: 0.4rem; /* espaçamento entre ícones */
+  max-width: 95%; /* limite para quebrar a linha perto dos 90% */
+  margin: 0.4rem auto 0;
+  justify-content: center;
+}
+
+.tecUsadas img {
+  height: 2rem;
+  width: 2.2rem;
+}
+
+/* PROJETOS */
+.sectionProjetosWhite {
+  width: 100%;
+  margin: 0rem auto;
+  height: auto;
+  padding: 6rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid rgba(70, 69, 67, 0.347);
+  border-bottom: 1px solid rgba(70, 69, 67, 0.347);
+}
+.titleProjetosWhite h2 {
+  width: 100%;
+  margin: 0 auto 0.5rem;
+  font-size: 3rem;
+  text-align: center;
+  font-weight: 800;
+  line-height: 4rem;
+  background: linear-gradient(90deg, rgb(129, 29, 195), rgb(0, 94, 255));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.subtitleWhite p {
+  text-align: center;
+  font-size: 1.2rem;
+  color: rgb(26, 25, 25);
+  margin-bottom: 2.5rem;
+}
+/* Layout dos cards */
+.contentProjetosWhite {
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin: 3rem auto 0;
+}
+
+.cardWhite {
+  height: 100%;
+  padding-bottom: 1rem;
+  box-sizing: border-box;
+ background-color: #000000d9;
+  border: 1px solid rgba(97, 94, 94, 0.523);
+  border-radius: 1rem;
+}
+.cardWhite:hover {
+  transform: scale(1.5);
+  cursor: pointer;
+  background: linear-gradient(
+    rgba(134, 9, 217, 0.803),
+    rgba(24, 91, 206, 0.814)
+  );
+}
+.cardResponsivoWhite {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  border: none;
+}
+
+/* Mockup notebook e celular */
+.imagensCardWhite {
+  width: 100%;
+  height: 12rem;
+}
+.imagensCardWhite button {
+  width: 80%;
+  position: relative;
+  bottom: 40%;
+  left: 10%;
+  font-weight: 600;
+  padding: 0.9rem 1.7rem;
+  margin-top: 1.2rem;
+  border: 1px solid transparent;
+  background-color: #4336a5;
+  border-radius: 0.8rem;
+  text-transform: uppercase;
+}
+.imagensCardWhite button:hover {
+  background: linear-gradient(90deg, rgb(129, 29, 195), rgb(0, 94, 255));
+}
+
+.projetoWhite {
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+  margin: 0 auto;
+}
+.cardWhite h5 {
+  margin: 1rem 0 0.5rem;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.cardWhite p {
+  color: rgb(218, 213, 213);
+  line-height: 1.2rem;
+  margin: 0 0 0.5rem;
+}
+.cardWhite .imagensCardWhite button {
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 0.3s ease;
+  pointer-events: none;
+}
+
+.cardWhite:hover .imagensCardWhite button {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.tecUsadasWhite {
+ display: flex;
+  flex-wrap: wrap; 
+  gap: 0.4rem; 
+  max-width: 95%; 
+  margin: 0.4rem auto 0;
+  justify-content: center;
+}
+.tecUsadasWhite img {
+ height: 2rem;
+  width: 2.2rem;
+}
+/* ======================= */
+/*      RESPONSIVIDADE     */
+/* ======================= */
+
+/* ====== 1400px ====== */
+@media (max-width: 1400px) {
+
+  .titleProjetos h2,.titleProjetosWhite h2 {
+    font-size: 2.6rem;
+    line-height: 3.4rem;
+  }
+
+  .subtitle p,.subtitleWhite p {
+    font-size: 1.15rem;
+  }
+
+  .contentProjetos,.contentProjetosWhite {
+    width: 85%;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+  }
+
+  .card:hover,.cardWhite:hover {
+    transform: scale(1.1); /* reduz o zoom para telas grandes */
+  }
+}
+
+/* ====== 1080px ====== */
+@media (max-width: 1080px) {
+
+  .titleProjetos h2,.titleProjetosWhite h2 {
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+  }
+
+  .contentProjetos,.contentProjetosWhite {
+    grid-template-columns: repeat(2, 1fr);
+    width: 90%;
+    gap: 25px;
+  }
+
+  .imagensCard,.imagensCardWhite {
+    height: 11rem;
+  }
+
+  .card:hover,.cardWhite:hover {
+    transform: scale(1.08);
+  }
+}
+
+/* ====== 768px ====== (tablet) ====== */
+@media (max-width: 768px) {
+
+  .sectionProjetos,.sectionProjetosWhite {
+    padding: 4rem 0;
+  }
+
+  .titleProjetos h2,.titleProjetosWhite h2 {
+    font-size: 2rem;
+    line-height: 2.6rem;
+  }
+
+  .subtitle p,.subtitleWhite p {
+    font-size: 1.05rem;
+    width: 90%;
+    margin: 0 auto 2rem;
+  }
+
+  .contentProjetos,.contentProjetosWhite {
+    grid-template-columns: 1fr;
+    width: 90%;
+    gap: 20px;
+  }
+
+  .imagensCard,.imagensCardWhite {
+    height: 14rem;
+  }
+
+  .card,.cardWhite {
+    width: 80%;
+    margin: 0 auto;
+    transform: scale(1); /* remove aumento exagerado */
+  }
+  .card:hover,.cardWhite:hover {
+    transform: scale(1.03);
+  }
+
+  .imagensCard button,.imagensCardWhite button {
+    bottom: 35%;
+  }
+   .tecUsadas,.tecUsadasWhite {
+    gap: 0.3rem;
+  }
+
+  .tecUsadas img,.tecUsadasWhite img {
+    height: 1.8rem;
+    width: 1.9rem;
+  }
+}
+
+/* ====== 480px ====== (mobile) ====== */
+@media (max-width: 480px) {
+
+  .sectionProjetos,.sectionProjetosWhite {
+    padding: 3rem 0;
+  }
+
+  .titleProjetos h2,.titleProjetosWhite h2 {
+    font-size: 1.7rem;
+    line-height: 2.2rem;
+  }
+
+  .subtitle p,.subtitleWhite p {
+    font-size: 0.95rem;
+    width: 100%;
+    margin-bottom: 1.8rem;
+  }
+
+  .contentProjetos,.contentProjetosWhite {
+    width: 95%;
+    gap: 18px;
+  }
+
+  .imagensCard,.imagensCardWhite {
+    height: 9.5rem;
+  }
+
+  .imagensCard button,.imagensCardWhite button {
+    padding: 0.8rem 1.3rem;
+    bottom: 32%;
+    font-size: 0.85rem;
+  }
+  .card,.cardWhite {
+    width: 70%;
+    margin: 0 auto;
+  }
+  .card h5,.cardWhite h5 {
+    font-size: 1.1rem;
+    text-align: center;
+  }
+
+  .card p,.cardWhite p {
+    font-size: 0.9rem;
+    text-align: center;
+  }
+
+  .tecUsadas,.tecUsadasWhite {
+    gap: 0.3rem;
+  }
+
+  .tecUsadas img,.tecUsadasWhite img {
+    height: 1.8rem;
+    width: 1.9rem;
+  }
+
+  .card:hover, .cardWhite:hover {
+    transform: scale(1.02);
+  }
+}

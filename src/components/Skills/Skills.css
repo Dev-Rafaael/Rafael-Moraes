@@ -1,0 +1,252 @@
+/* Tecnologias */
+.habilidadesContent {
+  width: 100%;
+  height: 100%;
+  margin: 5rem auto;
+  padding-bottom: 5rem;
+  cursor: pointer;
+  border-bottom: 1px solid rgba(70, 69, 67, 0.347);
+}
+.articleHabilidades {
+  height: 100%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1rem;
+}
+.titleTecnologia h2 {
+  width: 40%;
+  margin: 0 auto 1rem;
+  font-size: 3rem;
+  text-align: center;
+  font-weight: 800;
+  line-height: 3rem;
+}
+.titleTecnologia span {
+  background: linear-gradient(90deg, rgb(129, 29, 195), rgb(0, 94, 255));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.listas ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+}
+.listas ul li {
+  background-color: rgb(17, 34, 73);
+  border-radius: 50%;
+}
+.listas ul li:hover {
+  transform: scale(1.1);
+}
+.listas img {
+  width: 4.5rem;
+  padding: 1rem;
+}
+.listas .zustandIcon {
+  width: 5rem;
+  height: 4.8rem;
+}
+.inProgress {
+  position: relative;
+  padding: 0rem;
+  border-radius: 0.6rem;
+  border: 2px dashed #666;
+}
+
+.inProgress::after {
+  content: "Em progresso";
+  position: absolute;
+  bottom: 0.8rem;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0.55rem;
+  color: #999;
+  width: 100%;
+  text-align: center;
+}
+
+.inProgress img {
+  opacity: 0.2; /* deixa o ícone mais "apagado" */
+}
+
+/* HABILIDADES */
+.habilidadesContentWhite {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  padding-bottom: 5rem;
+  cursor: pointer;
+  border-bottom: 1px solid rgba(70, 69, 67, 0.347);
+}
+.titleTecnologiaWhite {
+  height: 80%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1rem;
+}
+.titleTecnologiaWhite h2 {
+  width: 40%;
+  margin: 0 auto 1rem;
+  font-size: 3rem;
+  text-align: center;
+  font-weight: 800;
+  line-height: 3rem;
+  color: #000000;
+}
+.titleTecnologiaWhite span {
+  background: linear-gradient(90deg, rgb(129, 29, 195), rgb(0, 94, 255));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.listasWhite ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+}
+.listasWhite ul li {
+  background-color: rgb(17, 34, 73);
+  border-radius: 50%;
+}
+.listasWhite ul li:hover {
+  transform: scale(1.1);
+}
+.listasWhite img {
+  width: 4.5rem;
+  padding: 1rem;
+}
+/* ======================= */
+/*      RESPONSIVIDADE     */
+/* ======================= */
+
+/* ====== 1400px ====== */
+@media (max-width: 1400px) {
+  .titleTecnologia h2, .titleTecnologiaWhite h2 {
+    width: 55%;
+    font-size: 2.6rem;
+    line-height: 3rem;
+  }
+
+  .listas img,.listasWhite img {
+    width: 4rem;
+    padding: 0.9rem;
+  }
+}
+
+/* ====== 1080px ====== */
+@media (max-width: 1080px) {
+  .habilidadesContent,.habilidadesContentWhite {
+    margin: 4rem auto;
+    padding-bottom: 4rem;
+  }
+
+  .titleTecnologia h2,.titleTecnologiaWhite h2 {
+    width: 65%;
+    font-size: 2.4rem;
+  }
+
+  .listas ul,.listasWhite ul {
+    gap: 0.8rem;
+  }
+
+  .listas img, .listasWhite img {
+    width: 3.5rem;
+    padding: 0.8rem;
+  }
+
+  .listas .zustandIcon, .listasWhite {
+    width: 4.2rem;
+    height: 4rem;
+  }
+}
+
+/* ====== 768px (tablet) ====== */
+@media (max-width: 768px) {
+  .titleTecnologia h2,.titleTecnologiaWhite h2 {
+    width: 85%;
+    font-size: 2.1rem;
+    line-height: 2.6rem;
+  }
+
+  .listas ul,.listasWhite ul {  
+    flex-wrap: wrap;
+    gap: 0.8rem;
+  }
+
+  .listas img,.listasWhite img {
+    width: 3.2rem;
+    padding: 0.7rem;
+  }
+
+  .listas .zustandIcon, .listasWhite {
+    width: 3.6rem;
+    height: 3.4rem;
+  }
+
+  .inProgress::after {
+    font-size: 0.6rem;
+    bottom: 0.5rem;
+  }
+}
+
+/* ====== 480px (mobile) ====== */
+@media (max-width: 480px) {
+  .habilidadesContent,.habilidadesContentWhite {
+    margin: 3rem auto;
+    padding-bottom: 3rem;
+  }
+
+  .titleTecnologia h2,.titleTecnologiaWhite h2 {
+    width: 100%;
+    font-size: 1.7rem;
+    line-height: 2.2rem;
+  }
+
+ .listas ul,.listasWhite ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+
+  /* força o li a diminuir e quebrar a linha */
+  .listas ul li,.listasWhite ul li {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .listas img,.listasWhite img {
+    width: 2.4rem;
+    padding: 0.4rem;
+  }
+
+  .listas .zustandIcon, .listasWhite {
+    width: 2.7rem;
+    height: 2.5rem;
+  }
+
+  .titleTecnologia h2,.titleTecnologiaWhite h2 {
+    font-size: 1.6rem;
+    line-height: 2rem;
+    width: 100%;
+  }
+
+  .inProgress::after {
+    bottom: 0.3rem;
+    font-size: 0.5rem;
+  }
+}
+

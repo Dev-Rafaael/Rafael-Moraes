@@ -1,0 +1,287 @@
+
+
+.navbar{
+  position: fixed;
+  left: 17%;
+  width: 66%;
+  height: 3rem;
+  margin: 1rem auto 0;
+  padding: 0 0.3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: transparent;
+  border: 1px solid  #e7e6e955;
+   backdrop-filter: blur(10px); 
+  -webkit-backdrop-filter: blur(10px); 
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3); 
+  border-radius: 1.5rem;
+z-index: 999;
+ cursor: pointer;
+
+}
+.logo p{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-size: 1.1rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+.logo img{
+  width: 2rem;
+  border-radius: 50%;
+}
+.listaBarra{
+  display: flex;
+  gap: 1.2rem;
+}
+.listaBarra li{
+  font-size: 0.9rem;
+  color: rgb(213, 209, 209);
+  opacity: 0.9;
+}
+.listaBarra li:hover{
+  opacity: 1;
+  color: rgb(255, 255, 255);
+}
+.estiloBackground{
+  width: 10%;
+  height: 2.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+ border: none;
+ border-radius: 2rem;
+ padding: 0 1rem;
+background: linear-gradient(90deg,rgb(129, 29, 195), rgb(0, 94, 255));
+}
+
+.estiloBackground img{
+  height: 1.8rem;
+  width: 1.8rem;
+  padding: 0.4rem;
+ border-radius: 50%;
+}
+
+
+.menu-hamburguer {
+    display: none; 
+    cursor: pointer;
+    z-index: 1000; 
+    padding: 0.5rem;
+}
+
+.menu-hamburguer .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: white;
+    transition: all 0.3s ease-in-out;
+    border-radius: 2px;
+}
+
+
+.menu-hamburguer.ativo .bar:nth-child(2) {
+    opacity: 0;
+}
+.menu-hamburguer.ativo .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+.menu-hamburguer.ativo .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+.navbarWhite{
+    position: fixed;
+  left: 17%;
+  width: 66%;
+  height: 3rem;
+  margin: 1rem auto 0;
+  padding: 0 0.3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+background-color: #1f1f20df;
+  border: 1px solid  #e7e6e955;
+   backdrop-filter: blur(10px); 
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3); 
+  border-radius: 1.5rem;
+z-index: 999;
+ cursor: pointer;
+
+}
+.listaBarraWhite{
+  display: flex;
+  gap: 1.2rem;
+}
+.listaBarraWhite li{
+  font-size: 0.9rem;
+  color: rgb(248, 245, 245);
+  opacity: 0.9;
+}
+.listaBarraWhite li:hover{
+  opacity: 1;
+  color: rgb(206, 203, 203);
+}
+
+.estiloBackgroundWhite{
+  width: 10%;
+  height: 2.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+ border: none;
+ border-radius: 2rem;
+ padding: 0 1rem;
+background: linear-gradient(90deg,rgb(129, 29, 195), rgb(0, 94, 255));
+}
+
+.estiloBackgroundWhite img{
+  height: 1.8rem;
+  width: 1.8rem;
+  padding: 0.4rem;
+ border-radius: 50%;
+}
+/* --- RESPONSIVO --- */
+
+/* ================================
+   BREAKPOINT 1400px
+   ================================ */
+@media (max-width: 1400px) {
+  .navbar,.navbarWhite {
+    left: 10%;
+    width: 80%;
+  }
+}
+
+/* ================================
+   BREAKPOINT 1024px
+   ================================ */
+@media (max-width: 1024px) {
+.navbar,.navbarWhite {
+    left: 5%;
+    width: 90%;
+    height: 3.2rem;
+  }
+
+  .listaBarra li,.listaBarraWhite li {
+    font-size: 0.85rem;
+  }
+
+  .estiloBackground, .estiloBackgroundWhite {
+    width: 14%;
+  }
+}
+
+
+@media (max-width: 768px) {
+
+
+  .menu-hamburguer {
+    display: block;
+    cursor: pointer;
+  }
+
+
+  .barra, .barraWhite {
+    position: absolute;
+    top: 3.2rem;
+    right: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius:  1rem;
+    padding: 2rem 0;
+    display: flex;
+    justify-content: center;
+
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-20px);
+    transition: 0.3s ease;
+  }
+
+
+  .barra.menu-aberto, 
+  .barraWhite.menu-aberto {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+  }
+
+
+  .listaBarra, .listaBarraWhite {
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+  }
+
+
+  .listaBarra li,
+  .listaBarraWhite li {
+    font-size: 1.1rem;
+    font-weight: 500;
+  }
+
+
+  .estiloBackground {
+    width: 3rem;
+    padding: 0;
+  }
+}
+
+
+
+@media (max-width: 468px) {
+
+  .navbar {
+    left: 0;
+    width: 100%;
+    border-radius: 0;
+    margin-top: 0.2rem;
+    height: 3.1rem;
+    padding: 0 0.8rem;
+  }
+
+  .logo p {
+    font-size: 0.9rem;
+    gap: 0.4rem;
+  }
+
+  .logo img {
+    width: 1.4rem;
+  }
+
+
+  .barra,
+  .barraWhite {
+    width: 100%;          
+    right: 0;             
+    padding: 1.5rem 0;     
+  }
+
+
+  .listaBarra li,
+  .listaBarraWhite li {
+    font-size: 0.85rem;
+  }
+
+
+  .estiloBackground,
+  .estiloBackgroundWhite {
+    width: 2.5rem;
+    height: 2.5rem;
+    padding: 0;
+  }
+
+  .estiloBackground img,
+  .estiloBackgroundWhite img {
+    width: 1.4rem;
+    height: 1.4rem;
+    padding: 0.25rem;
+  }
+}

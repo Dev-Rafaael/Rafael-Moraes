@@ -1,0 +1,536 @@
+
+
+/* CONTATO  */
+.sectionContato{
+  width: 78%;
+  margin: 0 auto ;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-bottom: 3rem;
+}
+.titleContato{
+  max-width: 100%;
+ text-align: center;
+ margin: 4rem 0 4rem;
+ display: flex;
+ flex-direction: column;
+ gap: 0.5rem;
+}
+.titleContato h2{
+  width: 40%;
+  margin: 0 auto;
+  font-size: 3rem;
+  text-align: center;
+  font-weight: 800;
+  line-height: 3rem;
+}
+.titleContato span{
+  background: linear-gradient(90deg,rgb(129, 29, 195), rgb(0, 94, 255));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.titleContato p {
+   width: 40%;
+    margin: 0 auto;
+  color: rgb(205, 198, 198);
+  font-size: 1.06rem;
+}
+.contato{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  gap: 1rem;
+}
+
+.formularioContato{
+  width: 50%;  
+}
+
+.formularioContato form{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+}
+.contentform{
+ background-color: #131314b8;
+  border-radius: 1rem;
+  padding: 1rem;
+  border: 1px solid rgba(105, 104, 103, 0.515);
+}
+.contentform:hover{
+  border-radius: 1rem;
+    background: linear-gradient(rgba(86, 81, 89, 0.315), rgba(78, 79, 80, 0.392));
+}
+.titulosForm{
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.titulosForm span{
+     background: linear-gradient(90deg,rgb(129, 29, 195), rgb(0, 94, 255));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+.titulosForm p{
+  color: rgb(205, 198, 198);
+  font-size: 1rem;
+}
+.campo{
+  width: 100%;
+ display: flex;
+ flex-direction: column;
+ gap: 0.4rem;
+ font-weight: 500;
+
+}
+.campo input, .campo select{
+  padding: 1rem;
+  color: rgb(255, 255, 255);
+   background-color: #8d889244;
+  border-radius: 0.8rem;
+  font-size: 1rem;
+   border: none;
+}
+.campo select option{
+  background-color: rgb(65, 65, 67);
+}
+textarea{
+  height: 8rem;
+  padding: 1rem;
+  color: rgb(255, 255, 255);
+   background-color: #8d889244;
+  border: none;
+  border-radius: 0.8rem;
+ resize: none;
+  font-size: 1rem;
+}
+.buttonForm{
+   width: 80%;
+    margin: 1rem auto;
+}
+.buttonForm button{
+  width: 100%;
+  height: 3rem;
+   background-color:  #4336a5;
+ border-radius: 1rem;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+.buttonForm button:hover{
+   background: linear-gradient(rgba(134, 9, 217, 0.715), rgba(24, 91, 206, 0.792));
+}
+.contentContato{
+  width: 40%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0rem;
+  border-radius: 1rem;
+}
+ .meioContato{
+  width: 100%;
+  color: rgb(255, 255, 255);
+  border-radius: 1rem;
+  padding: 1rem;
+  border: 1px solid rgba(105, 104, 103, 0.515);
+}
+.meioContato:hover{
+  background: linear-gradient(rgba(86, 81, 89, 0.315), rgba(78, 79, 80, 0.392));
+  cursor: pointer; 
+  }
+
+
+.conteudoApresentacao h2{
+  margin: 0.5rem 0  1rem;
+  font-size: 1.4rem;  
+  text-align: center;
+}
+.conteudoApresentacao span{
+   background: linear-gradient(90deg,rgb(129, 29, 195), rgb(0, 94, 255));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+.meioContato{
+  background-color: #131314b8;
+   border-radius:  1rem;
+}
+.meioContato ul {
+display: flex;
+flex-direction: column;
+   gap: 1rem;
+}
+.meioContato li{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.meioContato p{
+  color: rgb(255, 255, 255);
+  font-size: 1rem;
+  font-weight: 500;
+}
+.meioContato ul span{
+  color: rgb(205, 198, 198);
+  font-size: 0.9rem;
+
+}
+.meioContato img{
+  height: 2.5rem;
+  width: 2.5rem;
+   border-radius: 0.6rem;
+ padding: 0.4rem;
+}
+ .whastsappIcon img{
+ background-color: rgb(13, 164, 30);
+}
+.linkedinIcon img{
+  background-color: rgb(38, 104, 179);
+}
+.gitHubIcon img{
+  background-color: rgb(0, 0, 0);
+}
+
+
+/* CONTATO  */
+.sectionContatoWhite{
+  width: 78%;
+  margin: 0 auto ;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-bottom: 3rem;
+}
+.titleContatoWhite{
+  max-width: 100%;
+ text-align: center;
+ margin: 4rem 0 4rem;
+ display: flex;
+ flex-direction: column;
+ gap: 0.5rem;
+}
+.titleContatoWhite h2{
+  width: 40%;
+  margin: 0 auto;
+  font-size: 3rem;
+  text-align: center;
+  font-weight: 800;
+  line-height: 3rem;
+  color: #000000;
+}
+.titleContatoWhite span{
+  background: linear-gradient(90deg,rgb(129, 29, 195), rgb(0, 94, 255));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.titleContatoWhite p {
+   width: 40%;
+    margin: 0 auto;
+  color: rgb(15, 14, 14);
+  font-size: 1.06rem;
+}
+.contatoWhite{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  gap: 1rem;
+}
+
+.formularioContatoWhite{
+  width: 50%;  
+}
+
+.formularioContatoWhite form{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+}
+.formularioContatoWhite:hover{
+  border-radius: 1rem;
+ background-color: #000000;
+ }
+.contentformWhite{
+ background-color: #000000d9;
+  border-radius: 1rem;
+  padding: 1rem;
+  border: 1px solid rgba(105, 104, 103, 0.515);
+}
+
+.titulosFormWhite{
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.titulosFormWhite span{
+     background: linear-gradient(90deg,rgb(129, 29, 195), rgb(0, 94, 255));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+.titulosFormWhite p{
+  color: rgb(251, 251, 251);
+  font-size: 1rem;
+}
+.campoWhite{
+  width: 100%;
+ display: flex;
+ flex-direction: column;
+ gap: 0.4rem;
+ font-weight: 500;
+
+}
+.campoWhite input, .campoWhite select{
+  padding: 1rem;
+  color: rgb(255, 255, 255);
+   background-color: #8d889244;
+  border-radius: 0.8rem;
+  font-size: 1rem;
+   border: none;
+}
+
+.campoWhite select option{
+  background-color: rgb(65, 65, 67);
+}
+
+.buttonFormWhite{
+   width: 80%;
+    margin: 1rem auto;
+}
+.buttonFormWhite button{
+  width: 100%;
+  height: 3rem;
+   background-color:  #4336a5;
+ border-radius: 1rem;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+.buttonFormWhite button:hover{
+   background: linear-gradient(rgba(134, 9, 217, 0.715), rgba(24, 91, 206, 0.792));
+}
+.contentContatoWhite{
+  width: 40%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0rem;
+  border-radius: 1rem;
+   background-color: #000000d9;   
+}
+ .meioContatoWhite{
+  width: 100%;
+  color: rgb(218, 211, 211);
+  border-radius: 1rem;
+  padding: 1rem;
+  border: 1px solid rgba(105, 104, 103, 0.515);
+  
+}
+.meioContatoWhite:hover{
+  background: linear-gradient(rgba(86, 81, 89, 0.315), rgba(78, 79, 80, 0.392));
+  cursor: pointer; 
+  }
+
+
+.conteudoApresentacaoWhite h2{
+  margin: 0.5rem 0  1rem;
+  font-size: 1.4rem;  
+  text-align: center;
+}
+.conteudoApresentacaoWhite span{
+   background: linear-gradient(90deg,rgb(129, 29, 195), rgb(0, 94, 255));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+.meioContatoWhite{
+  background-color: #131314b8;
+   border-radius:  1rem;
+}
+.meioContatoWhite ul {
+display: flex;
+flex-direction: column;
+   gap: 1rem;
+}
+.meioContatoWhite li{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.meioContatoWhite p{
+  color: rgb(255, 255, 255);
+  font-size: 1rem;
+  font-weight: 500;
+}
+.meioContatoWhite ul span{
+  color: rgb(205, 198, 198);
+  font-size: 0.9rem;
+
+}
+.meioContatoWhite img{
+  height: 2.5rem;
+  width: 2.5rem;
+   border-radius: 0.6rem;
+ padding: 0.4rem;
+}
+ .whastsappIcon img{
+ background-color: rgb(13, 164, 30);
+}
+.linkedinIcon img{
+  background-color: rgb(38, 104, 179);
+}
+.gitHubIcon img{
+  background-color: rgb(0, 0, 0);
+}
+
+.meioContatoWhite:hover{
+  background: linear-gradient(rgba(38, 37, 40, 0.815), rgba(53, 55, 56, 0.822));
+  }
+
+  .contentformWhite:hover{
+  border-radius: 1rem;
+     background: linear-gradient(rgba(38, 37, 40, 0.815), rgba(53, 55, 56, 0.822));
+}
+/* --- RESPONSIVO --- */
+
+/* Ajustes para Telas até 1400px */
+@media (max-width: 1400px) {
+    .sectionContato, .sectionContatoWhite {
+        width: 85%;
+    }
+    .titleContato h2,
+    .titleContato p
+    .titleContatoWhite h2,
+    .titleContatoWhite p {
+        width: 50%;
+    }
+}
+/* Ajustes para Telas até 1024px (Laptops/Tablets Maiores) */
+@media (max-width: 1024px) {
+    .sectionContato, .sectionContatoWhite {
+        width: 90%;
+    }
+    .titleContato h2,
+    .titleContato p, .titleContatoWhite h2,
+    .titleContatoWhite p {    
+        width: 60%;
+    }
+    
+    /* Ajusta a distribuição de largura entre formulário e conteúdo */
+    .formularioContato, .formularioContatoWhite {
+        width: 55%; 
+    }
+    .contentContato, .contentformWhite {
+        width: 45%; 
+    }
+}
+/* Ajustes para Telas até 768px (Tablets em Retrato) */
+@media (max-width: 768px) {
+    .sectionContato, .sectionContatoWhite {
+        /* Quase toda a largura */
+        width: 95%; 
+    }
+    .titleContato h2, .titleContatoWhite h2 {
+        /* Diminui o tamanho da fonte do título principal */
+        font-size: 2.5rem;
+        line-height: 2.5rem;
+    }
+    .titleContato h2,
+    .titleContato p, .titleContatoWhite h2,
+    .titleContatoWhite p{  /* Aumenta a largura para telas menores */
+        width: 80%; 
+    }
+
+    /* MUDANÇA DE LAYOUT: Empilha formulário e meios de contato */
+    .contato, .contatoWhite {
+        flex-direction: column;
+        gap: 2rem; /* Aumenta o espaço entre os elementos empilhados */
+    }
+
+    /* O formulário e o conteúdo de contato agora ocupam 100% da largura disponível */
+    .formularioContato,
+    .contentContato,
+    .formularioContatoWhite,
+    .contentformWhite {
+        width: 100%; 
+    }
+    
+    /* Centraliza o botão do formulário */
+    .buttonForm,
+    .buttonFormWhite {
+        width: 90%; 
+    }
+
+/* Ajustes para Telas até 480px (Smartphones) */
+@media (max-width: 480px) {
+    .sectionContato,.sectionContatoWhite {
+        /* Padding maior na parte superior para dar espaço ao conteúdo */
+        padding-top: 1rem;
+    }
+    
+    /* Diminui o margin do título para economizar espaço */
+    .titleContato, .titleContatoWhite {
+        margin: 2rem 0 2rem; 
+    }
+
+    .titleContato h2, .titleContatoWhite h2 {
+        font-size: 2rem;
+        line-height: 2rem;
+    }
+
+    .titleContato h2,
+    .titleContato p, .titleContatoWhite h2,
+    .titleContatoWhite p{
+        width: 95%; 
+    }
+    
+    .titleContato p,
+    .titleContatoWhite p{
+        font-size: 1rem;
+    }
+
+    
+    .contentform, .contentformWhite {
+        padding: 0.8rem;
+        border-radius: 0.6rem;
+    }
+
+  
+    textarea {
+        height: 6rem;
+    }
+
+    
+    .meioContato, .meioContatoWhite {
+        padding: 0.8rem;
+        border-radius: 0.6rem;
+    }
+
+    
+    .meioContato img, .meioContatoWhite img{
+        height: 2rem;
+        width: 2rem;
+        padding: 0.3rem;
+    }
+
+    .meioContato p, .meioContatoWhite p {
+        font-size: 0.9rem;
+    }
+    .meioContato ul span, .meioContatoWhite ul span{
+        font-size: 0.8rem;
+    }
+}  }
