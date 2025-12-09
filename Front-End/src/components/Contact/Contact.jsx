@@ -30,6 +30,8 @@ function Contact({ modoEscuro }) {
             body: JSON.stringify(dadosEmail),
           }
         );
+        console.log('sucesso', dadosEmail);
+        
         toast.success("Enviado Com Sucesso!");
 
         setNome("");
