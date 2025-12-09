@@ -3,6 +3,16 @@ import "./Contact.css";
 
 
 function Contact({ modoEscuro }) {
+  async function enviarFormulario(data) {
+  const res = await fetch("backend-portifolio-production-d660.up.railway.app/contato", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(data),
+  });
+
+  return await res.json();
+}
+
   return (
        <section
                   className={modoEscuro ? "sectionContato" : "sectionContatoWhite"}
@@ -28,7 +38,7 @@ function Contact({ modoEscuro }) {
                       <div
                         className={modoEscuro ? "contentform" : "contentformWhite"}
                       >
-                        <form>
+                        <form onSubmit={enviarFormulario}>
                           <div
                             className={
                               modoEscuro ? "titulosForm" : "titulosFormWhite"
