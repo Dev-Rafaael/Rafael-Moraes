@@ -294,10 +294,10 @@ function Projects({ modoEscuro }) {
             className={modoEscuro ? "cardResponsivo" : "cardResponsivoWhite"}
           >
             <div className={modoEscuro ? "imagensCard" : "imagensCardWhite"}>
-              <img src={"https://res.cloudinary.com/dwi9yz8wj/image/upload/v1765199818/Captura_de_Tela_166_pp6b3i.png"} className="imagem" alt="Notebook" />
+              <img src={"https://res.cloudinary.com/dwi9yz8wj/image/upload/v1765321797/Captura_de_Tela_173_bynj31.png"} className="imagem" alt="Notebook" />
               <button>
                 <a
-                  href="https://dev-rafaael.github.io/DecoreHome.github.io/"
+                  href="https://decore-home-six.vercel.app"
                   target="_blank"
                 >
                   Ver Projeto
@@ -306,11 +306,9 @@ function Projects({ modoEscuro }) {
             </div>
           </article>
           <article className={modoEscuro ? "projeto" : "projetoWhite"}>
-            <h5>DecoreHome</h5>
+            <h5>DecoreHome – Catálogo Decorativo</h5>
             <p>
-              I created a fullstack application using Next.js with APi Routes,
-              mongodb, firebase, built a CMS from scratch and several advanced
-              features.
+              Projeto apresentando ambientes decorados, com visual moderno e foco em navegação simples para explorar inspirações de design.
             </p>
             <ul className={modoEscuro ? "tecUsadas" : "tecUsadasWhite"}>
              <li>
@@ -335,6 +333,54 @@ function Projects({ modoEscuro }) {
                     "https://res.cloudinary.com/dwi9yz8wj/image/upload/v1765200187/javascript_nbwfe1.png"
                   }
                   alt="JavaScript"
+                />
+              </li>
+              <li>
+                <img
+                  src={
+                    "https://res.cloudinary.com/dwi9yz8wj/image/upload/v1765200106/react_ejm60z.png"
+                  }
+                  alt="React"
+                />
+              </li>
+              <li>
+                <img
+                  src={
+                    "https://res.cloudinary.com/dwi9yz8wj/image/upload/v1765199984/typescript_qvdtda.png"
+                  }
+                  alt="TypesScript"
+                />
+              </li>
+              <li>
+                <img
+                  src={
+                    "https://res.cloudinary.com/dwi9yz8wj/image/upload/v1765200025/node_i7wjfa.png"
+                  }
+                  alt="Node"
+                />
+              </li>
+              <li>
+                <img
+                  src={
+                    "https://res.cloudinary.com/dwi9yz8wj/image/upload/v1765199925/express_fp1g2i.png"
+                  }
+                  alt="Express"
+                />
+              </li>
+              <li>
+                <img
+                  src={
+                    "https://res.cloudinary.com/dwi9yz8wj/image/upload/v1765199887/zod_uz54r5.png"
+                  }
+                  alt="Zod"
+                />
+              </li>
+              <li>
+                <img
+                  src={
+                    "https://res.cloudinary.com/dwi9yz8wj/image/upload/v1765199887/vitest-logo-png_seeklogo-434979_muaids.png"
+                  }
+                  alt="Vitest"
                 />
               </li>
             </ul>
