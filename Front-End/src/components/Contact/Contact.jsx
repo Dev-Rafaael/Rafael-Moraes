@@ -8,41 +8,45 @@ function Contact({ modoEscuro }) {
   const [motivo, setMotivo] = useState("");
   const [mensagem, setMensagem] = useState("");
 
-  const handleEmail = async (e) => {
+const handleEmail = async (e) => {
     e.preventDefault();
 
     if (!nome || !email || !motivo || !mensagem) {
-      return toast.error("Preencha todos os campos obrigatórios!");
+        return toast.error("Preencha todos os campos obrigatórios!");
     }
-    try {
-      const dadosEmail = {
-        nome,
-        email,
-        motivo,
-        mensagem,
-      };
-      if (dadosEmail) {
-        await fetch(
-          "https://backend-portifolio-production-d660.up.railway.app/contato",
-          {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify(dadosEmail),
-          }
-        );
-        console.log('sucesso', dadosEmail);
-        
-        toast.success("Enviado Com Sucesso!");
 
-        setNome("");
-        setEmail("");
-        setMotivo("");
-        setMensagem("");
-      }
+    try {
+        const dadosEmail = { nome, email, motivo, mensagem };
+
+        const response = await fetch(
+            "https://backend-portifolio-production-d660.up.railway.app/contato",
+            {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify(dadosEmail),
+            }
+        );
+
+        if (response.ok) {          
+            toast.success("Enviado Com Sucesso!");
+
+            setNome("");
+            setEmail("");
+            setMotivo("");
+            setMensagem("");
+        
+        } else {
+            const errorData = await response.json();
+            console.error('Erro de resposta do servidor:', errorData);
+
+            toast.error( "Falha ao enviar mensagem. Tente novamente."); 
+        }
+
     } catch (error) {
-      console.log(error);
-    }
-  };
+        console.error('Erro de rede (catch):', error);
+        toast.error("Erro de conexão ou rede. Verifique seu link.");
+    } 
+};
 
   return (
     <section

@@ -10,7 +10,7 @@ import Contact from "./components/Contact/Contact";
 import Projects from "./components/Projects/Projects";
 import Skills from "./components/Skills/Skills";
 import About from "./components/About/About";
-
+import { ToastContainer } from "react-toastify";
 // vídeos vindos da pasta PUBLIC (porque são acessados por "/videos/...")
 // Se quiser colocar no src/assets me avisa que ajusto tudo pra você.
 
@@ -56,6 +56,7 @@ function App() {
 
   return (
     <>
+    <ToastContainer/>
       <main className={modoEscuro ? "videoSection" : "videoSectionWhite"}>
         <video
           ref={videoRef}
