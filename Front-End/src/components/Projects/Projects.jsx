@@ -396,10 +396,10 @@ function Projects({ modoEscuro }) {
             className={modoEscuro ? "cardResponsivo" : "cardResponsivoWhite"}
           >
             <div className={modoEscuro ? "imagensCard" : "imagensCardWhite"}>
-              <img src={"https://res.cloudinary.com/dwi9yz8wj/image/upload/v1765199818/Captura_de_Tela_166_pp6b3i.png"} className="imagem" alt="Notebook" />
+              <img src={"https://res.cloudinary.com/dwi9yz8wj/image/upload/v1765327561/Captura_de_Tela_174_aeoni5.png"} className="imagem" alt="Notebook" />
               <button>
                 <a
-                  href="https://dev-rafaael.github.io/DecoreHome.github.io/"
+                  href="https://hdc-host-seven.vercel.app"
                   target="_blank"
                 >
                   Ver Projeto
@@ -408,12 +408,11 @@ function Projects({ modoEscuro }) {
             </div>
           </article>
           <article className={modoEscuro ? "projeto" : "projetoWhite"}>
-            <h5>DecoreHome</h5>
+            <h5>HDCHost – Plataforma de Hospedagem</h5>
             <p>
-              I have worked on several features in the netshoes core team,
-              currently mostly in performance engineering.
+              Sistema de hospedagem com painel simples e intuitivo para gerenciar sites, domínios e serviços de forma prática.
             </p>
-            <ul className={modoEscuro ? "tecUsadas" : "tecUsadasWhite"}>
+           <ul className={modoEscuro ? "tecUsadas" : "tecUsadasWhite"}>
              <li>
                 <img
                   src={
@@ -436,6 +435,54 @@ function Projects({ modoEscuro }) {
                     "https://res.cloudinary.com/dwi9yz8wj/image/upload/v1765200187/javascript_nbwfe1.png"
                   }
                   alt="JavaScript"
+                />
+              </li>
+              <li>
+                <img
+                  src={
+                    "https://res.cloudinary.com/dwi9yz8wj/image/upload/v1765200106/react_ejm60z.png"
+                  }
+                  alt="React"
+                />
+              </li>
+              <li>
+                <img
+                  src={
+                    "https://res.cloudinary.com/dwi9yz8wj/image/upload/v1765199984/typescript_qvdtda.png"
+                  }
+                  alt="TypesScript"
+                />
+              </li>
+              <li>
+                <img
+                  src={
+                    "https://res.cloudinary.com/dwi9yz8wj/image/upload/v1765200025/node_i7wjfa.png"
+                  }
+                  alt="Node"
+                />
+              </li>
+              <li>
+                <img
+                  src={
+                    "https://res.cloudinary.com/dwi9yz8wj/image/upload/v1765199925/express_fp1g2i.png"
+                  }
+                  alt="Express"
+                />
+              </li>
+              <li>
+                <img
+                  src={
+                    "https://res.cloudinary.com/dwi9yz8wj/image/upload/v1765199887/zod_uz54r5.png"
+                  }
+                  alt="Zod"
+                />
+              </li>
+              <li>
+                <img
+                  src={
+                    "https://res.cloudinary.com/dwi9yz8wj/image/upload/v1765199887/vitest-logo-png_seeklogo-434979_muaids.png"
+                  }
+                  alt="Vitest"
                 />
               </li>
             </ul>
