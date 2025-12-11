@@ -1,6 +1,5 @@
 import "./Projects.css";
 
-
 function Projects({ modoEscuro }) {
   return (
     <section
@@ -23,7 +22,56 @@ function Projects({ modoEscuro }) {
       </div>
       <article
         className={modoEscuro ? "contentProjetos" : "contentProjetosWhite"}
-      >
+      > <div
+          className={modoEscuro ? "card" : "cardWhite"}
+          data-aos="fade-left"
+          data-aos-delay="200"
+        >
+          <article
+            className={modoEscuro ? "cardResponsivo" : "cardResponsivoWhite"}
+          >
+            <div className={modoEscuro ? "imagensCard" : "imagensCardWhite"}>
+              <img
+                src="https://res.cloudinary.com/dwi9yz8wj/image/upload/v1765456502/gettyimages-1366800010-640x640_fhqukv.jpg"
+                className="imagem"
+                alt="Projeto em desenvolvimento"
+              />
+
+              <button disabled className="btnDisabled">
+                Em Desenvolvimento
+              </button>
+            </div>
+          </article>
+
+          <article className={modoEscuro ? "projeto" : "projetoWhite"}>
+            <h5>Novo Sistema – Em Desenvolvimento</h5>
+            <p>
+              Projeto em construção trazendo novas funcionalidades, melhorias de
+              performance e interface totalmente modernizada.
+            </p>
+
+            <ul className={modoEscuro ? "tecUsadas" : "tecUsadasWhite"}>
+              <li>
+                <img
+                  src="https://res.cloudinary.com/dwi9yz8wj/image/upload/v1765456569/icons8-ponto-de-interroga%C3%A7%C3%A3o-96_c6hqj0.png"
+                  alt="????"
+                />
+              </li>
+              <li>
+                <img
+                  src="https://res.cloudinary.com/dwi9yz8wj/image/upload/v1765456569/icons8-ponto-de-interroga%C3%A7%C3%A3o-96_c6hqj0.png"
+                  alt="????"
+                />
+              </li>{" "}
+              <li>
+                <img
+                  src="https://res.cloudinary.com/dwi9yz8wj/image/upload/v1765456569/icons8-ponto-de-interroga%C3%A7%C3%A3o-96_c6hqj0.png"
+                  alt="????"
+                />
+              </li> 
+            </ul>
+          </article>
+        </div>
         {/* Card Projeto */}
         <div
           className={modoEscuro ? "card" : "cardWhite"}
@@ -54,7 +102,7 @@ function Projects({ modoEscuro }) {
           <article className={modoEscuro ? "projeto" : "projetoWhite"}>
             <h5>La Pizza – E-commerce</h5>
             <p>
-              E-commerce da pizzaria Lá Pizza, com cardápio online, pedidos
+              E-commerce da pizzaria La Pizza, com cardápio online, pedidos
               personalizados e dashboard de gestão de vendas.
             </p>
             <ul className={modoEscuro ? "tecUsadas" : "tecUsadasWhite"}>
@@ -63,7 +111,7 @@ function Projects({ modoEscuro }) {
                   src={
                     "https://res.cloudinary.com/dwi9yz8wj/image/upload/v1765200126/html_ktpien.png"
                   }
-                  alt="HTML"
+                  alt="La Pizza Imagem"
                 />
               </li>
               <li>
@@ -162,6 +210,14 @@ function Projects({ modoEscuro }) {
                   alt="Stripe"
                 />
               </li>
+              <li>
+                <img
+                  src={
+                    "https://res.cloudinary.com/dwi9yz8wj/image/upload/v1765199887/vite_f5mm9w.png"
+                  }
+                  alt="Vite"
+                />
+              </li>
             </ul>
           </article>
         </div>
@@ -181,7 +237,7 @@ function Projects({ modoEscuro }) {
                   "https://res.cloudinary.com/dwi9yz8wj/image/upload/v1765199818/Captura_de_Tela_166_pp6b3i.png"
                 }
                 className="imagem"
-                alt="Notebook"
+                alt="DashBoard Image"
               />
               <button>
                 <a
@@ -280,6 +336,14 @@ function Projects({ modoEscuro }) {
                   alt="Vitest"
                 />
               </li>
+              <li>
+                <img
+                  src={
+                    "https://res.cloudinary.com/dwi9yz8wj/image/upload/v1765199887/vite_f5mm9w.png"
+                  }
+                  alt="Vite"
+                />
+              </li>
             </ul>
           </article>
         </div>
@@ -294,12 +358,15 @@ function Projects({ modoEscuro }) {
             className={modoEscuro ? "cardResponsivo" : "cardResponsivoWhite"}
           >
             <div className={modoEscuro ? "imagensCard" : "imagensCardWhite"}>
-              <img src={"https://res.cloudinary.com/dwi9yz8wj/image/upload/v1765321797/Captura_de_Tela_173_bynj31.png"} className="imagem" alt="Notebook" />
+              <img
+                src={
+                  "https://res.cloudinary.com/dwi9yz8wj/image/upload/v1765321797/Captura_de_Tela_173_bynj31.png"
+                }
+                className="imagem"
+                alt="Notebook"
+              />
               <button>
-                <a
-                  href="https://decore-home-six.vercel.app"
-                  target="_blank"
-                >
+                <a href="https://decore-home-six.vercel.app" target="_blank">
                   Ver Projeto
                 </a>
               </button>
@@ -308,15 +375,16 @@ function Projects({ modoEscuro }) {
           <article className={modoEscuro ? "projeto" : "projetoWhite"}>
             <h5>DecoreHome – Catálogo Decorativo</h5>
             <p>
-              Projeto apresentando ambientes decorados, com visual moderno e foco em navegação simples para explorar inspirações de design.
+              Projeto apresentando ambientes decorados, com visual moderno e
+              foco em navegação simples para explorar inspirações de design.
             </p>
             <ul className={modoEscuro ? "tecUsadas" : "tecUsadasWhite"}>
-             <li>
+              <li>
                 <img
                   src={
                     "https://res.cloudinary.com/dwi9yz8wj/image/upload/v1765200126/html_ktpien.png"
                   }
-                  alt="HTML"
+                  alt="Decore Home Image"
                 />
               </li>
               <li>
@@ -378,9 +446,9 @@ function Projects({ modoEscuro }) {
               <li>
                 <img
                   src={
-                    "https://res.cloudinary.com/dwi9yz8wj/image/upload/v1765199887/vitest-logo-png_seeklogo-434979_muaids.png"
+                    "https://res.cloudinary.com/dwi9yz8wj/image/upload/v1765199887/vite_f5mm9w.png"
                   }
-                  alt="Vitest"
+                  alt="Vite"
                 />
               </li>
             </ul>
@@ -396,12 +464,15 @@ function Projects({ modoEscuro }) {
             className={modoEscuro ? "cardResponsivo" : "cardResponsivoWhite"}
           >
             <div className={modoEscuro ? "imagensCard" : "imagensCardWhite"}>
-              <img src={"https://res.cloudinary.com/dwi9yz8wj/image/upload/v1765327561/Captura_de_Tela_174_aeoni5.png"} className="imagem" alt="Notebook" />
+              <img
+                src={
+                  "https://res.cloudinary.com/dwi9yz8wj/image/upload/v1765327561/Captura_de_Tela_174_aeoni5.png"
+                }
+                className="imagem"
+                alt="Notebook"
+              />
               <button>
-                <a
-                  href="https://hdc-host-seven.vercel.app"
-                  target="_blank"
-                >
+                <a href="https://hdc-host-seven.vercel.app" target="_blank">
                   Ver Projeto
                 </a>
               </button>
@@ -410,15 +481,16 @@ function Projects({ modoEscuro }) {
           <article className={modoEscuro ? "projeto" : "projetoWhite"}>
             <h5>HDCHost – Plataforma de Hospedagem</h5>
             <p>
-              Sistema de hospedagem com painel simples e intuitivo para gerenciar sites, domínios e serviços de forma prática.
+              Sistema de hospedagem com painel simples e intuitivo para
+              gerenciar sites, domínios e serviços de forma prática.
             </p>
-           <ul className={modoEscuro ? "tecUsadas" : "tecUsadasWhite"}>
-             <li>
+            <ul className={modoEscuro ? "tecUsadas" : "tecUsadasWhite"}>
+              <li>
                 <img
                   src={
                     "https://res.cloudinary.com/dwi9yz8wj/image/upload/v1765200126/html_ktpien.png"
                   }
-                  alt="HTML"
+                  alt="HDC Host Image"
                 />
               </li>
               <li>
@@ -480,9 +552,9 @@ function Projects({ modoEscuro }) {
               <li>
                 <img
                   src={
-                    "https://res.cloudinary.com/dwi9yz8wj/image/upload/v1765199887/vitest-logo-png_seeklogo-434979_muaids.png"
+                    "https://res.cloudinary.com/dwi9yz8wj/image/upload/v1765199887/vite_f5mm9w.png"
                   }
-                  alt="Vitest"
+                  alt="Vite"
                 />
               </li>
             </ul>
@@ -497,22 +569,25 @@ function Projects({ modoEscuro }) {
             className={modoEscuro ? "cardResponsivo" : "cardResponsivoWhite"}
           >
             <div className={modoEscuro ? "imagensCard" : "imagensCardWhite"}>
-              <img src={"https://res.cloudinary.com/dwi9yz8wj/image/upload/v1765199818/Captura_de_Tela_166_pp6b3i.png"} className="imagem" alt="Notebook" />
+              <img
+                src={
+                  "https://res.cloudinary.com/dwi9yz8wj/image/upload/v1765455736/Captura_de_Tela_178_negczx.png"
+                }
+                className="imagem"
+                alt="Constrularis"
+              />
               <button>
-                <a
-                  href="https://dev-rafaael.github.io/PizzariaLaPizza.github.io/"
-                  target="_blank"
-                >
+                <a href="https://constrularis.vercel.app" target="_blank">
                   Ver Projeto
                 </a>
               </button>
             </div>
           </article>
           <article className={modoEscuro ? "projeto" : "projetoWhite"}>
-            <h5>La Pizza</h5>
+            <h5>Constrularis – Catálogo de Materiais de Construção</h5>
             <p>
-              I have worked on several features in the netshoes core team,
-              currently mostly in performance engineering.
+              Página moderna para apresentar produtos da construção civil com
+              clareza e fácil navegação.
             </p>
 
             <ul className={modoEscuro ? "tecUsadas" : "tecUsadasWhite"}>
@@ -521,7 +596,7 @@ function Projects({ modoEscuro }) {
                   src={
                     "https://res.cloudinary.com/dwi9yz8wj/image/upload/v1765200126/html_ktpien.png"
                   }
-                  alt="HTML"
+                  alt="HDC Host Image"
                 />
               </li>
               <li>
@@ -540,63 +615,58 @@ function Projects({ modoEscuro }) {
                   alt="JavaScript"
                 />
               </li>
-            </ul>
-          </article>
-        </div>
-        <div
-          className={modoEscuro ? "card" : "cardWhite"}
-          data-aos="fade-left"
-          data-aos-delay="200"
-        >
-          <article
-            className={modoEscuro ? "cardResponsivo" : "cardResponsivoWhite"}
-          >
-            <div className={modoEscuro ? "imagensCard" : "imagensCardWhite"}>
-              <img src={"https://res.cloudinary.com/dwi9yz8wj/image/upload/v1765199818/Captura_de_Tela_166_pp6b3i.png"} className="imagem" alt="Notebook" />
-              <button>
-                <a
-                  href="https://dev-rafaael.github.io/PizzariaLaPizza.github.io/"
-                  target="_blank"
-                >
-                  Ver Projeto
-                </a>
-              </button>
-            </div>
-          </article>
-          <article className={modoEscuro ? "projeto" : "projetoWhite"}>
-            <h5>La Pizza</h5>
-            <p>
-              I have worked on several features in the netshoes core team,
-              currently mostly in performance engineering.
-            </p>
-            <ul className={modoEscuro ? "tecUsadas" : "tecUsadasWhite"}>
               <li>
                 <img
                   src={
-                    "https://res.cloudinary.com/dwi9yz8wj/image/upload/v1765200126/html_ktpien.png"
+                    "https://res.cloudinary.com/dwi9yz8wj/image/upload/v1765200106/react_ejm60z.png"
                   }
-                  alt="HTML"
+                  alt="React"
                 />
               </li>
               <li>
                 <img
                   src={
-                    "https://res.cloudinary.com/dwi9yz8wj/image/upload/v1765199957/css_wdrfsp.png"
+                    "https://res.cloudinary.com/dwi9yz8wj/image/upload/v1765199984/typescript_qvdtda.png"
                   }
-                  alt="CSS"
+                  alt="TypesScript"
                 />
               </li>
               <li>
                 <img
                   src={
-                    "https://res.cloudinary.com/dwi9yz8wj/image/upload/v1765200187/javascript_nbwfe1.png"
+                    "https://res.cloudinary.com/dwi9yz8wj/image/upload/v1765200025/node_i7wjfa.png"
                   }
-                  alt="JavaScript"
+                  alt="Node"
+                />
+              </li>
+              <li>
+                <img
+                  src={
+                    "https://res.cloudinary.com/dwi9yz8wj/image/upload/v1765199925/express_fp1g2i.png"
+                  }
+                  alt="Express"
+                />
+              </li>
+              <li>
+                <img
+                  src={
+                    "https://res.cloudinary.com/dwi9yz8wj/image/upload/v1765199887/zod_uz54r5.png"
+                  }
+                  alt="Zod"
+                />
+              </li>
+              <li>
+                <img
+                  src={
+                    "https://res.cloudinary.com/dwi9yz8wj/image/upload/v1765199887/vite_f5mm9w.png"
+                  }
+                  alt="Vite"
                 />
               </li>
             </ul>
           </article>
         </div>
+       
       </article>
     </section>
   );
