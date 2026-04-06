@@ -94,6 +94,15 @@ function Skills({ modoEscuro }) {
                 alt="Tailwind"
               />
             </li>
+             <li className="inProgress">
+              {" "}
+              <img
+                src={
+                  "https://res.cloudinary.com/dwi9yz8wj/image/upload/v1775485763/next_js_logo_icon_145038_vpa3m6.webp"
+                }
+                alt="Next Js"
+              />
+            </li>
           </ul>
           {/* <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, quisquam ad exercitationem facilis sit id, earum natus magnam iusto voluptates placeat fugiat voluptatum itaque doloremque totam amet molestias a assumenda.</span> */}
         </div>
