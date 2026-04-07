@@ -56,14 +56,15 @@ function About({ modoEscuro }) {
               </p>
             </div>
             <div className={modoEscuro ? "btnSobreMim" : "btnSobreMimWhite"}>
-              <a
+              <button>  <a
                 href="https://docs.google.com/document/d/16rNkqwq6dte8YrJy23Qd3ZWKLIjcLnrqoriCyTDvPQw/export?format=pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className={modoEscuro ? "btnSobreMim" : "btnSobreMimWhite"}
               >
                 Download CV
-              </a>
+              </a></button>
+            
             </div>
           </article>
           <img
