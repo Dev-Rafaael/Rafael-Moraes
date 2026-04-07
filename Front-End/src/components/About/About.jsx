@@ -16,11 +16,10 @@ function About({ modoEscuro }) {
             Quem <span>eu sou?</span>{" "}
           </h2>
           <p>
-            Sou o <span>Rafael</span> um Desenvolvedor Front-end e Full Stack,
-            especializado na criação de interfaces web, desenvolvimento de
-            sistemas e aplicações modernas. Trabalho com tecnologias como
-            React.js, Laravel (PHP) e MySQL, sempre buscando construir soluções
-            dinâmicas, escaláveis e de alta performance.
+            Sou o <span>Rafael</span>, Desenvolvedor Full Stack focado na
+            criação de aplicações web modernas, escaláveis e de alta
+            performance. Trabalho com tecnologias como React.js, Node.js e
+            PostgreSQL, desenvolvendo interfaces intuitivas e APIs robustas.
           </p>
         </div>
         <article className={modoEscuro ? "contentSobre" : "contentSobreWhite"}>
@@ -31,33 +30,49 @@ function About({ modoEscuro }) {
           >
             <div className={modoEscuro ? "listaContent" : "listaContentWhite"}>
               <p>
-                Me chamo <span> Rafael Moraes</span>, sou Desenvolvedor Full
-                Stack com foco em criar soluções web modernas, escaláveis e de
-                alta performance. Trabalho com React.js no front-end e Laravel
-                (PHP) com MySQL no back-end, sempre buscando entregar interfaces
-                bem construídas e sistemas eficientes.
+                Me chamo <span>Rafael Moraes</span> e atuo como Desenvolvedor
+                Full Stack, com experiência no desenvolvimento de sistemas
+                completos, do front-end ao back-end. Utilizo React.js no
+                front-end e Node.js com Express, Prisma e PostgreSQL no
+                back-end, criando aplicações modernas, escaláveis e bem
+                estruturadas.
               </p>
+
+              <p>
+                Aplico boas práticas como validação de dados com Zod,
+                gerenciamento de estado com Zustand e testes automatizados com
+                Jest e Vitest, garantindo qualidade, segurança e confiabilidade
+                no código. Tenho como foco escrever código limpo e entregar a
+                melhor experiência possível para o usuário.
+              </p>
+
               <p>
                 Sou formado em Análise e Desenvolvimento de Sistemas pela
-                Anhanguera e pós-graduando em Inteligência Artificial e Ciência
-                de Dados pela Anhembi Morumbi. Além disso, mantenho o
-                aprendizado constante por meio de cursos voltados ao
-                desenvolvimento web.
-              </p>
-              <p>
-                Tenho como prioridade escrever código limpo, aplicar boas
-                práticas e garantir a melhor experiência para o usuário. Estou
-                sempre em busca de evolução e de novos desafios que me façam
-                crescer como profissional e como pessoa.
+                Anhanguera e estou me pós-graduando em Inteligência Artificial e
+                Ciência de Dados pela Anhembi Morumbi. Além disso, sigo em
+                constante evolução, aprofundando meus conhecimentos em Next.js,
+                AWS e Tailwind CSS, sempre em busca de novos desafios que
+                impulsionem meu crescimento profissional.
               </p>
             </div>
             <div className={modoEscuro ? "btnSobreMim" : "btnSobreMimWhite"}>
-              <button>
-                <a href="#contato">Dowload CV</a>
-              </button>
+              <a
+                href="https://docs.google.com/document/d/16rNkqwq6dte8YrJy23Qd3ZWKLIjcLnrqoriCyTDvPQw/export?format=pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={modoEscuro ? "btnSobreMim" : "btnSobreMimWhite"}
+              >
+                Download CV
+              </a>
             </div>
           </article>
-          <img src={"https://res.cloudinary.com/dwi9yz8wj/image/upload/v1765199964/completo_tb0v5w.png"} data-aos="fade-left" data-aos-delay="400" />
+          <img
+            src={
+              "https://res.cloudinary.com/dwi9yz8wj/image/upload/v1765199964/completo_tb0v5w.png"
+            }
+            data-aos="fade-left"
+            data-aos-delay="400"
+          />
         </article>
       </section>
     </section>
