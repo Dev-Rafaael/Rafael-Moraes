@@ -17,9 +17,10 @@ function About({ modoEscuro }) {
           </h2>
           <p>
             Sou o <span>Rafael</span>, Desenvolvedor Full Stack focado na
-            criação de aplicações web modernas, escaláveis e de alta
-            performance. Trabalho com tecnologias como React.js, Node.js e
-            PostgreSQL, desenvolvendo interfaces intuitivas e APIs robustas.
+            criação de aplicações web modernas e escaláveis. Trabalho com
+            React.js, Node.js e PostgreSQL, desenvolvendo interfaces intuitivas
+            e APIs robustas, além de aprofundar meus conhecimentos com a
+            integração de IA em projetos.
           </p>
         </div>
         <article className={modoEscuro ? "contentSobre" : "contentSobreWhite"}>
@@ -34,37 +35,36 @@ function About({ modoEscuro }) {
                 Full Stack, com experiência no desenvolvimento de sistemas
                 completos, do front-end ao back-end. Utilizo React.js no
                 front-end e Node.js com Express, Prisma e PostgreSQL no
-                back-end, criando aplicações modernas, escaláveis e bem
-                estruturadas.
+                back-end, criando aplicações modernas e bem estruturadas.
               </p>
 
               <p>
-                Aplico boas práticas como validação de dados com Zod,
-                gerenciamento de estado com Zustand e testes automatizados com
-                Jest e Vitest, garantindo qualidade, segurança e confiabilidade
-                no código. Tenho como foco escrever código limpo e entregar a
-                melhor experiência possível para o usuário.
+                Aplico boas práticas como validação com Zod, gerenciamento de
+                estado com Zustand e testes com Jest e Vitest, garantindo
+                qualidade e confiabilidade. Tenho como foco escrever código
+                limpo e evoluir constantemente, especialmente com a inserção de
+                IA nos projetos.
               </p>
 
               <p>
                 Sou formado em Análise e Desenvolvimento de Sistemas pela
-                Anhanguera e estou me pós-graduando em Inteligência Artificial e
-                Ciência de Dados pela Anhembi Morumbi. Além disso, sigo em
-                constante evolução, aprofundando meus conhecimentos em Next.js,
-                AWS e Tailwind CSS, sempre em busca de novos desafios que
-                impulsionem meu crescimento profissional.
+                Anhanguera e sigo me especializando, aprofundando conhecimentos
+                em Next.js, AWS e Inteligência Artificial, sempre buscando novos
+                desafios e evolução profissional.
               </p>
             </div>
             <div className={modoEscuro ? "btnSobreMim" : "btnSobreMimWhite"}>
-              <button>  <a
-                href="https://docs.google.com/document/d/16rNkqwq6dte8YrJy23Qd3ZWKLIjcLnrqoriCyTDvPQw/export?format=pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-                className={modoEscuro ? "btnSobreMim" : "btnSobreMimWhite"}
-              >
-                Download CV
-              </a></button>
-            
+              <button>
+                {" "}
+                <a
+                  href="https://docs.google.com/document/d/16rNkqwq6dte8YrJy23Qd3ZWKLIjcLnrqoriCyTDvPQw/export?format=pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={modoEscuro ? "btnSobreMim" : "btnSobreMimWhite"}
+                >
+                  Download CV
+                </a>
+              </button>
             </div>
           </article>
           <img
